@@ -1,0 +1,38 @@
+{
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "preserveCompilationContext": true,
+    "debugType": "portable"
+  },
+  "dependencies": {
+    "Microsoft.NETCore.App": {
+      "version": "1.0.0-rc2-23929"
+    },
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc3-20540"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": [
+        "portable-net45+wp80+win8+wpa81+dnxcore50"
+      ]
+    }
+  },
+  "runtimes": {
+    "ubuntu.14.04-x64": {},
+    "win10-x64": {}
+  },
+  "tooling": {
+    "defaultNamespace": "EmptyWebApplication"
+  },
+  "tools": {
+    "Microsoft.DotNet.Watcher.Tools": {
+      "version": "1.0.0-*",
+      "imports": "portable-net451+win8"
+    }
+  },
+  "runtimeOptions": {
+    "configProperties": {
+      "System.GC.Server": true
+    }
+  },
+}
